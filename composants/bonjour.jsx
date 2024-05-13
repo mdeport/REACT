@@ -1,3 +1,3 @@
-function Bonjour() {
-  return <h1>Bonjour</h1>;
+export default function Bonjour(texte) {
+  return <h1>{texte}</h1>;
 }
