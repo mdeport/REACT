@@ -1,7 +1,6 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
@@ -163,6 +162,36 @@
   font-weight: 700;
   font-size: 1.2rem;
   cursor: pointer;
+}
+
+.bloc_card {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: left;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+.bloc_card h2 {
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.bloc_card p {
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {

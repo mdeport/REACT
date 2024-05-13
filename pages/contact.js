@@ -3,10 +3,11 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import navbar from "@/composants/navbar";
+import stylescontact from "@/styles/Contact.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function about_page() {
   return (
     <>
       <Head>
@@ -22,19 +23,22 @@ export default function Home() {
         {navbar()}
       </nav>
       <main className={`${styles.main} ${inter.className}`}>
-        <div className={styles.sectionPrincipal}>
-          <div className={styles.sectionTexte}>
-            <a>
-              <h1 className={styles.titrePrincipal}>Hi!</h1>
-              <h1 className={styles.titrePrincipal}>
-                I'am <span className={styles.textecouleur}>Matéo</span>
-              </h1>
-              <h1 className={styles.titrePrincipal}>Web developer</h1>
-              <button className={styles.contactButton}>Contact</button>
-            </a>
-          </div>
-          <div className={styles.sectionTexte}>
-            <Image className={styles.logonavbar} src="/pikachu.png" alt="pikachu Logo" width={300} height={300} priority />
+        <div className={stylescontact.container}>
+          <div className={stylescontact.contact}>
+            <h3>Contactez-nous</h3>
+            <label>
+              Prenom <input type="text" />
+            </label>
+            <label>
+              Nom <input type="text" />
+            </label>
+            <label>
+              Email <input type="text" />
+            </label>
+            <label>
+              Message <textarea></textarea>
+            </label>
+            <button>Send</button>
           </div>
         </div>
       </main>
